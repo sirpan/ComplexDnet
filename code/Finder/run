@@ -1,0 +1,49 @@
+#!/usr/bin/env bash
+set -e
+
+# This is the master script for the capsule. When you click "Reproducible Run", the code in this file will execute.
+#"Please set the model you want to review (1 or 2 or 3 or 4 or 5)："
+#"1:  model of FINDER_CN in the paper"
+#"2:  model of FINDER_CN_cost in the paper"
+#"3:  model of FINDER_ND in the paper"
+#"4:  model of FINDER_ND_cost in the paper"
+#"5:  model of FINDER_percolation in the paper"
+
+for choice in {1..5}
+do
+    case $choice in
+    1)
+        modelName="FINDER_CN"
+        ;;
+    2)
+        modelName="FINDER_CN_cost"
+        ;;
+    3)
+        modelName="FINDER_ND"
+        ;;
+    4)
+        modelName="FINDER_ND_cost"
+        ;;
+    5)
+        modelName="FINDER_percolation"
+        ;;
+    *)
+        echo "Your choose is error!"
+        ;;
+    esac
+    prompt="Step1:Building the model of "$modelName""
+    echo -e "\033[40;37m ${prompt} \033[0m" 
+    python -u "./"$modelName"/setup.py" build_ext -i
+
+    prompt="Step3:testing the model of "$modelName" by using the synthetic datasets in the paper"
+    echo -e "\033[40;37m ${prompt} \033[0m" 
+    python -u "./"$modelName"/testSynthetic.py"
+
+    prompt="Step2:testing the model of "$modelName" by using the real datasets in the paper"
+    echo -e "\033[40;37m ${prompt} \033[0m" 
+    python -u "./"$modelName"/testReal.py"
+
+    prompt="Program is finished！"
+    echo -e "\033[40;37m ${prompt} \033[0m" 
+done
+
