@@ -28,7 +28,7 @@ Non-alcoholic steatohepatitis (NASH) is a severe form of non-alcoholic fatty liv
      - [NASH-Score](./code/NASH-Score): source code and results for NASH-Score.
 - [data](./data): data appled by NASHnet for all code.
 - [Results](./Results): Results of paper.
-
+- [software](./software): software of NASH-Predictor.
 
 # System Requirements
 
