@@ -9,7 +9,7 @@ This is a framework implementation of NASHnet, as described in our paper:
 - [Overview](#overview)
 - [Repo Contents](#repo-contents)
 - [System Requirements](#system-requirements)
-
+- [user guide](./Directions for use.pdf)
 
 # Overview
 
