@@ -9,8 +9,7 @@ This is a framework implementation of NASHnet, as described in our paper:
 - [Overview](#overview)
 - [Repo Contents](#repo-contents)
 - [System Requirements](#system-requirements)
-- [User guide](#User guide)
-
+- [User guide](#User_guide)
 # Overview
 
 Non-alcoholic steatohepatitis (NASH) is a severe form of non-alcoholic fatty liver disease (NAFLD), which is becoming an increasingly prevalent global health issue. Despite ongoing research, effective treatments for NASH remain scarce due to its complex pathogenesis and poorly understood mechanisms. In this study, we developed NASH-predictor, a novel network-based approach that integrates gene expression data and protein-protein interaction networks to identify potential therapeutic targets for NASH. Our method led to the identification of RORγt as a critical target in NASH. We then screened natural compounds and identified Panaxtriol (PXT) from ginseng as a promising candidate. Experimental validation showed that PXT effectively inhibits RORγt and alleviates liver fibrosis in animal models, demonstrating its potential as a therapeutic agent for NASH. These results not only highlight the therapeutic potential of PXT, but also underscore the value of network-based strategies in advancing treatment options for complex diseases like NASH.
@@ -77,7 +76,7 @@ GPU: 16+ GB
 
 The runtimes below are generated using a computer with the recommended specs (16 GB RAM, 4 cores@3.3 GHz) and internet of speed 25 Mbps.
 
-#User guide
+# User_guide
 Before using the NASH-Predictor software, please read the Directions for use.pdf in the root directory carefully
 
 
