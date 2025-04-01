@@ -9,7 +9,7 @@ This is a framework implementation of NASHnet, as described in our paper:
 - [Overview](#overview)
 - [Repo Contents](#repo-contents)
 - [System Requirements](#system-requirements)
-- [user guide](./Directions for use.pdf)
+- [User guide](#User guide)
 
 # Overview
 
@@ -77,7 +77,8 @@ GPU: 16+ GB
 
 The runtimes below are generated using a computer with the recommended specs (16 GB RAM, 4 cores@3.3 GHz) and internet of speed 25 Mbps.
 
-
+#User guide
+Before using the NASH-Predictor software, please read the Directions for use.pdf in the root directory carefully
 
 
 
