@@ -1,4 +1,4 @@
-# NASH-Predictor
+# ComplexDnet
 
 This is a framework implementation of NASHnet, as described in our paper:
 
