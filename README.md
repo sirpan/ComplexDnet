@@ -1,8 +1,8 @@
 # ComplexDnet
 
-This is a framework implementation of NASHnet, as described in our paper:
+This is a framework implementation of ComplexDnet, as described in our paper:
 
-![demo](https://github.com/sirpan/NASHnet/blob/main/Fig%20.1new.png)
+![demo](https://github.com/sirpan/ComplexDnet/blob/main/Fig%20.1new.png)
 
 ## Contents
 
@@ -12,11 +12,11 @@ This is a framework implementation of NASHnet, as described in our paper:
 - [User guide](#User_guide)
 # Overview
 
-Non-alcoholic steatohepatitis (NASH) is a severe form of non-alcoholic fatty liver disease (NAFLD), which is becoming an increasingly prevalent global health issue. Despite ongoing research, effective treatments for NASH remain scarce due to its complex pathogenesis and poorly understood mechanisms. In this study, we developed NASH-predictor, a novel network-based approach that integrates gene expression data and protein-protein interaction networks to identify potential therapeutic targets for NASH. Our method led to the identification of RORγt as a critical target in NASH. We then screened natural compounds and identified Panaxtriol (PXT) from ginseng as a promising candidate. Experimental validation showed that PXT effectively inhibits RORγt and alleviates liver fibrosis in animal models, demonstrating its potential as a therapeutic agent for NASH. These results not only highlight the therapeutic potential of PXT, but also underscore the value of network-based strategies in advancing treatment options for complex diseases like NASH.
+The intricate pathogenesis of complex diseases poses formidable challenges for target and drug discovery, particularly in disorders like non-alcoholic steatohepatitis (NASH) where cross-talking multi-system induced insufficient efficacy of treatment.  Here, we present ComplexDnet—a first-in-class AI-driven framework integrating transcriptomic data, protein-protein (PPI) network to prioritize targets and decode mechanisms. Unlike conventional PPI-centric approaches, ComplexDnet establishes a transcriptome-driven framework that identifies different types of complex disease novel targets, achieving average 77.63% recall in eight types of cancer target identification, surpassing traditional differential gene (DEG) analysis by ~20%. Then we apply ComplexDnet in NASH and revealing RORγt as a central regulator of NASH-associated inflammatory and fibrotic cascades. Leveraging this finding, we conducted a network-based VS on RORγt, and 28 compounds were selected for experimental validation. In a high-throughout RORγt-GAL4 luciferase reporter screen, panaxatriol (PXT) was identified as a novel, direct RORγt inhibitor (IC50=0.01 µM). The 2.8 Å resolution X-ray structure of the RORγt-PXT complex confirmed PXT acts as an inverse agonist. Given RORγt's role in NASH-driven liver fibrosis, we evaluated PXT in mouse liver fibrosis models, where it significantly attenuated collagen deposition and inflammatory responses. Critically, we packaged this pipeline into an open-source software (https://github.com/sirpan/ComplexDnet ), achieving higher hit rates and speed than random screening in target identification. ComplexDnet provides a AI-driven framework for NASH therapeutic strategy discovery, with a transferable framework for multi-disease treatment optimization.
 
 # Repo Contents
 
-- [code](./code): source code of NASHnet for the following four cases in the paper.
+- [code](./code): source code of ComplexDnet for the following four cases in the paper.
      - [Finder](./code/Finder): source code for the Finder (FInding key players in complex Networks through DEep Reinforcement learning).
      - [GAPR](./code/GAPR): source code for the GAPR (greedy articulation points removal).
      - [WGCNA](./code/WGCNA): source code for WGCNA (Weighted Gene Co-expression Network Analysis).
@@ -25,7 +25,7 @@ Non-alcoholic steatohepatitis (NASH) is a severe form of non-alcoholic fatty liv
      - [wSDTNBI results](./code/wSDTNBI%20results): source code and results for prediction of DTI using wSDTNBI.
      - [figure code](./code/figure%20code): source code and results for figure.
      - [NASH-Score](./code/NASH-Score): source code and results for NASH-Score.
-- [data](./data): data appled by NASHnet for all code.
+- [data](./data): data appled by ComplexDnet for all code.
 - [Results](./Results): Results of paper.
 - [software](./software): software of NASH-Predictor.
 
