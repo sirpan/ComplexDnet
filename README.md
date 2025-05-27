@@ -34,7 +34,7 @@ The intricate pathogenesis of complex diseases poses formidable challenges for t
 ## Software dependencies and operating systems
 
 ### Software dependencies
-The software can be downloaded from https://zenodo.org/records/1552447
+The software can be downloaded from https://zenodo.org/records/15524471
 Users should install the following packages first, which will install in about 5 minutes on a machine with the recommended specs. The versions of software are, specifically:
 ```
 cython==0.29.13 
