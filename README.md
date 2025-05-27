@@ -27,14 +27,14 @@ The intricate pathogenesis of complex diseases poses formidable challenges for t
      - [NASH-Score](./code/NASH-Score): source code and results for NASH-Score.
 - [data](./data): data appled by ComplexDnet for all code.
 - [Results](./Results): Results of paper.
-- [software](./software): software of NASH-Predictor.
+- [software](./software): software of ComplexDnet.
 
 # System Requirements
 
 ## Software dependencies and operating systems
 
 ### Software dependencies
-
+The software can be downloaded from https://zenodo.org/records/1552447
 Users should install the following packages first, which will install in about 5 minutes on a machine with the recommended specs. The versions of software are, specifically:
 ```
 cython==0.29.13 
@@ -77,7 +77,7 @@ GPU: 16+ GB
 The runtimes below are generated using a computer with the recommended specs (16 GB RAM, 4 cores@3.3 GHz) and internet of speed 25 Mbps.
 
 # User_guide
-Before using the NASH-Predictor software, please read the Directions for use.pdf in the root directory carefully
+Before using the ComplexDnet software, please read the Directions for use.pdf in the root directory carefully
 
 
 
